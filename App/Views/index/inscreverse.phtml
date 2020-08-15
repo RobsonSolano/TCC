@@ -1,0 +1,52 @@
+<!--Capa-->
+<section id="user" class="my-5 ">
+    <div class="container">
+        <div id="cadDadosPessoais">
+            <div class="row d-flex justify-content-center">
+
+                <div class="col-md-6 col-12 bg-white border rounded d-flex justify-content-center">
+                    <form action="/cadastra" class="form py-3 px-1 w-75" method="POST">
+                        <div class="form-group text-center">
+                            <h3 class="text-secondary">Cadastro</h3>
+                        </div>
+                        <hr>
+
+                        <div class="form-group">
+                            <input type="text" name="cli_name" id="nomeUser" required class="form-control" placeholder="Nome completo">
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" name="cli_phone" id="contatoUser" maxlength="13" onKeyPress="formata(this,'###########')" required class="form-control" placeholder="DDD 9 0000-0000">
+                            <?php if (isset($_GET['cad']) && $_GET['cad'] == "error") {
+                                echo "<p class='text-danger pt-2 pt-3'>Erro, Celular já cadastrado!</p>";
+                            } ?>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="cli_email" id="emailUser" required class="form-control" placeholder="exemplo@exemplo.com">
+                        </div>
+
+                        <div class="input-group">
+                            <input type="password" maxlength="8" name="cli_pass" id="passUser" required class="form-control" placeholder="Digite sua senha 6-8 digitos">
+
+                            <div class="input-group-preppend">
+                                <button type="button" onmouseover="alterViewPass()" onmouseout="alterClosePass()" class="btn btn-secondary text-white">
+                                    <i id="eyesFas" class="fas fa-eye-slash"></i>
+                                </button>
+                            </div>
+
+                        </div>
+                        <?php if (isset($_GET['pass']) && $_GET['pass'] == "error") {
+                            echo "<p class='text-danger pt-1 pb-2'>Senha de 6 - 8 Dígitos</p>";
+                        } ?>
+
+                        <div class="form-group mt-3">
+                            <button type="submit" class="btn btn-dark">Cadastrar</button>
+                        </div>
+                        <div class="form-group">
+                            <p class="text-secondary">Já possui cadastro? <a href="/identifica" class="text-dark">Entrar</a></p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

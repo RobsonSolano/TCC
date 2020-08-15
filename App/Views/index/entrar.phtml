@@ -1,0 +1,36 @@
+<!--Capa-->
+<section id="user" class="my-5 ">
+    <div class="container">
+        <div id="cadDadosPessoais">
+            <div class="row d-flex justify-content-center">
+
+                <div class="col-md-6 col-12  border rounded bg-white">
+                    <form action="/entrar" class="form p-5" method="POST">
+                        <div class="form-group text-center">
+                            <h3 class="text-secondary">Entrar</h3>
+                        </div>
+                        <hr>
+                        <div class="form-group">
+                            <input type="email" name="cli_email" id="emailUser" required class="form-control" placeholder="Digite seu e-mail">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" name="cli_pass" id="passUser" required class="form-control" placeholder="Digite sua senha">
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-dark">Entrar</button>
+                        </div>
+                        <?php if (isset($_GET['login']) && $_GET['login'] == "erro") {
+                        ?>
+                            <div class="form-group">
+                                <p class="text-danger">Falha ao fazer login!<br>Verifique os dados e tente novamente</p>
+                            </div>
+                        <?php } ?>
+                        <div class="form-group">
+                            <p class="text-secondary">Não possui cadastro? <a href="/inscreverse" class="text-dark">Registrar-se</a></p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

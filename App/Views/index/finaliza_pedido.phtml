@@ -1,0 +1,28 @@
+<section id="listaProdutos" class="my-5">
+    <div class="container p-4">
+        <div class="row bg-white rounded">
+            <div class="col-6 p-4">
+
+                <div class="row">
+                    <?php
+                    foreach ($_POST as $indice => $value) {
+                        if ($value != '') {
+                            echo "<p>" . $indice . "<strong> " . $value . "</strong></p><br>";
+
+                            $id_prods = str_replace('prod_id', '', $indice);
+                            echo "<p>Produto com id: $id_prods</p><br>";
+                        }
+                    }
+                    ?>
+                </div>
+
+                <div class="row">
+                    
+                </div>
+
+
+            </div>
+        </div>
+
+    </div>
+</section>

@@ -1,0 +1,120 @@
+<!-- <div class="row listaProdutos">
+
+                    <div class="col-lg-4 col-12 mt-1">
+                        <button name="lanche" type="button" class="form-control btn btn-dark" onclick="showOption('showLanches')">
+                            Lanches
+                            <i class="fas fa-caret-down fas-2x text-white"></i>
+                        </button>
+                        <div class="d-none" id="showLanches">
+                            <table class="table bg-white text-center rounded-bottom">
+                                <thead>
+                                    <td class="border-right">Lanches</td>
+                                    <td class="border-right">Valor</td>
+                                </thead>
+                                <tr>
+                                    <td class="border-right">
+                                        Hot Dog
+                                        <input type="hidden" name="tituloPorcao" value="produto-id">
+                                    </td>
+                                    <td class="border-right">
+                                        <label for="ValorProduto">R$ 6,00 </label>
+                                        <input type="checkbox" name="ValorProduto" value="Valor" id="ValorProduto" class="">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="border-right">
+                                        X-Calabresa
+                                        <input type="hidden" name="tituloPorcao" value="produto-id">
+                                    </td>
+                                    <td class="border-right">
+                                        <label for="ValorProduto">R$ 10,00 </label>
+                                        <input type="checkbox" name="ValorProduto" value="Valor" id="ValorProduto" class="">
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-12 mt-1">
+
+                        <button name="lanche" type="button" class="form-control btn btn-dark" onclick="showOption('showPorcoes')">
+                            Porções
+                            <i class="fas fa-caret-down text-white"></i>
+                        </button>
+                        <div class="d-none" id="showPorcoes">
+
+                            <table class="table bg-white text-center rounded-bottom">
+                                <thead>
+                                    <td class="border-right">Porções</td>
+                                    <td class="border-right">Média</td>
+                                    <td>Grande</td>
+                                </thead>
+                                <tr>
+                                    <td class="border-right">
+                                        Batata frita
+                                        <input type="hidden" name="tituloPorcao" value="produto-id">
+                                    </td>
+                                    <td class="border-right">
+                                        <label for="valorMedio">R$ 10,00 </label>
+                                        <input type="checkbox" name="ValorProduto" value="Valor" id="valorMedio" class="">
+                                    </td>
+                                    <td>
+                                        <label for="valorGrande">R$ 15,00 </label>
+                                        <input type="checkbox" name="ValorProduto" value="Valor" id="valorGrande" class="">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="border-right">
+                                        Calabresa
+                                        <input type="hidden" name="tituloPorcao" value="produto-id">
+                                    </td>
+                                    <td class="border-right">
+                                        <label for="valorMedio">R$ 14,00 </label>
+                                        <input type="checkbox" name="ValorProduto" value="Valor" id="valorMedio" class="">
+                                    </td>
+                                    <td>
+                                        <label for="valorGrande">R$ 18,00 </label>
+                                        <input type="checkbox" name="ValorProduto" value="Valor" id="valorGrande" class="">
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-4 col-12 mt-1">
+
+                        <button name="bebida" type="button" class="form-control btn btn-dark" onclick="showOption('showBebidas')">
+                            Bebidas
+                            <i class="fas fa-caret-down text-white"></i>
+                        </button>
+                        <div class="d-none" id="showBebidas">
+                            <table class="table bg-white text-center rounded-bottom">
+                                <thead>
+                                    <td class="border-right">Bebidas</td>
+                                    <td class="border-right">Valor</td>
+                                </thead>
+                                <tr>
+                                    <td class="border-right">
+                                        Coca cola 600 ml
+                                        <input type="hidden" name="tituloPorcao" value="produto-id">
+                                    </td>
+                                    <td class="border-right">
+                                        <label for="valorBebida">R$ 6,50 </label>
+                                        <input type="checkbox" name="ValorProduto" value="precoProduto" id="valorBebida" class="">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="border-right">
+                                        Coca cola 1,5 L
+                                        <input type="hidden" name="tituloPorcao" value="produto-id">
+                                    </td>
+                                    <td class="border-right">
+                                        <label for="valorBebida">R$ 8,50 </label>
+                                        <input type="checkbox" name="ValorProduto" value="precoProduto" id="valorBebida" class="">
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                -->
